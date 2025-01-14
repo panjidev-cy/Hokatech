@@ -10,7 +10,7 @@ const Footer = () => {
                     </p>
                 </div>
                 {/* Quick Links */}
-                <div className=" flex gap-20 items-center justify-between md:w-full">
+                <div className=" flex gap-20 md:gap-10 items-center justify-between md:w-full md:flex-col-reverse md:items-start">
                     <div>
                         <h2 className="text-xl font-semibold mb-4 text-yellow-300">Quick Links</h2>
                         <ul className="space-y-3">
@@ -30,18 +30,17 @@ const Footer = () => {
                         <h2 className="text-xl font-semibold mb-4 text-yellow-300">Contact</h2>
                         <ul className="space-y-3">
                             <li>
-                                📩 <a href="mailto:[email@example.com]" className="hover:text-yellow-300">[email@example.com]</a>
+                                📩 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hudukaja@gmail.com" target="_blank" className="hover:text-yellow-300">[hudukaja@gmail.com]</a>
+                            </li>
+
+                            <li>
+                                📱 <a href="tel:+6282143698231" className="hover:text-yellow-300">0821 4369 8231</a>
                             </li>
                             <li>
-                                📱 <a href="tel:+6281234567890" className="hover:text-yellow-300">+62 812 3456 7890</a>
-                            </li>
-                            <li>
-                                🌐 <a href="https://linkedin.com/in/username" className="hover:text-yellow-300">linkedin.com/in/username</a>
+                                🌐 <a href="https://linkedin.com/in/username" target="blank" className="hover:text-yellow-300">linkedin.com/in/username</a>
                             </li>
                         </ul>
                     </div>
-
-
                 </div>
 
             </div>

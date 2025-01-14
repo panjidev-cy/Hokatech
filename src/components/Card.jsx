@@ -1,7 +1,7 @@
 import React from 'react';
 import img1 from "../assets/image1.gif"
 import img2 from "../assets/image2.gif" 
-import img3 from "../assets/image3.jpeg"
+import img3 from "../../hoks_assets/img/1000/hoka_dark.png"
 
     const Card = ({ title, description, imageSrc }) => {
     return (
