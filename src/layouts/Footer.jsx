@@ -30,7 +30,7 @@ const Footer = () => {
                         <h2 className="text-xl font-semibold mb-4 text-yellow-300">Contact</h2>
                         <ul className="space-y-3">
                             <li>
-                                📩 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hudukaja@gmail.com" target="_blank" className="hover:text-yellow-300">[hudukaja@gmail.com]</a>
+                                📩 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hudukaja@gmail.com&su=Subject+Here&body=Message+Body+Here" target="_blank" className="hover:text-yellow-300">[hudukaja@gmail.com]</a>
                             </li>
 
                             <li>

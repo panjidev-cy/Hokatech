@@ -32,7 +32,7 @@ const About = () => {
                     <h1 className="text-3xl font-medium font-poppins leading-tight scroll-mt-16 md:scroll-mt-24">
                     hello im{' '}
                     <span className="text-purple bg-white shadow-lg shadow-slate-300 px-2 py-1 font-semibold capitalize -rotate-6 inline-block">
-                        zastin
+                        Hoka
                     </span>{' '}
                     a web{' '}
                     <span className="bg-dark text-yellow-300 px-2 inline-block rotate-6">developer</span>
