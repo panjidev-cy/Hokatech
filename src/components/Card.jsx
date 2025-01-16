@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from "../assets/image1.gif"
-import img2 from "../assets/image2.gif" 
-import img3 from "../../hoks_assets/img/1000/hoka_dark.png"
+import img1 from "../assets/code.jpg"
+import img2 from "../../hoks_assets/img/1000/hoka_dark.png"
+import img3 from "../assets/computer.jpg" 
 
     const Card = ({ title, description, imageSrc }) => {
     return (
@@ -9,12 +9,12 @@ import img3 from "../../hoks_assets/img/1000/hoka_dark.png"
           <img 
               src={imageSrc} 
               alt={title} 
-              className="w-full h-32 object-cover mb-4" 
+              className="w-full h-32 object-cover " 
           />
-          <div className=" py-1 px-4">
+          <div className=" py-4   px-4 relative">
             <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
             <p className="text-sm text-gray-500 text-center mt-2">{description}</p>
-            <div className="mt-4">
+            <div className=" absolute  -top-4 -right-1 py-2 px-3 rounded-s-lg border   border-indigo-500 bg-white">
                 <button className="text-indigo-500 hover:underline flex items-center">
                 Learn More <span className="ml-2">→</span>
                 </button>
