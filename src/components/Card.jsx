@@ -46,7 +46,7 @@ import img3 from "../assets/computer.jpg"
           
 
     return (
-        <div className="grid md:grid-cols-1 grid-cols-3 gap-6 px-4  py-8">
+        <div className="grid md:grid-cols-1 grid-cols-3 gap-6 px-4  py-8" id="skills">
         {cards.map((card, index) => (
             <Card
             key={index}
