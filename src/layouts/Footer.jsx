@@ -4,7 +4,7 @@ const Footer = () => {
             {/* Top Section */}
             <div className="grid grid-cols-2 md:grid-cols-1 gap-10 p-6 place-items-center border-b border-gray-700 pb-8">
                 <div className="w-full flex items-center justify-center gap-4 ">
-                    <h1 className="text-5xl font-bold font-poppins hover:text-yellow-300">zastin</h1>
+                    <h1 className="text-5xl font-bold font-poppins hover:text-yellow-300">hokatech</h1>
                     <p className="text-xs opacity-50 font-poppins mt-4 w-[80%] border-l-2 pl-2 hover:text-yellow-300">
                     I am Panji Bhekti, ready to help you build stunning, high-performance apps. Discover my work and be a part of this story.
                     </p>
@@ -18,7 +18,7 @@ const Footer = () => {
                                 <a href="#about" className="hover:text-yellow-300">About Me</a>
                             </li>
                             <li>
-                                <a href="#portfolio" className="hover:text-yellow-300">Portfolio</a>
+                                <a href="#skills" className="hover:text-yellow-300">skills</a>
                             </li>
                             <li>
                                 <a href="#contact" className="hover:text-yellow-300">Contact</a>
@@ -51,7 +51,7 @@ const Footer = () => {
                     
                     {/* Copyright */}
                     <p className="mt-6 md:mt-0 text-xs text-slate-400">
-                        &copy; 2024 Zastin. All rights reserved.
+                        &copy; 2024 HokaTech. All rights reserved.
                     </p>
                 </div>
             </div>
