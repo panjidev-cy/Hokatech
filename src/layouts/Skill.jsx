@@ -11,7 +11,7 @@ const Skill = () => {
             </h1>
             
             {/* Card List */}
-            <div className="w-full flex items-center justify-center   py-8" id="skills">
+            <div className="w-full h-screen md:h-auto flex items-center justify-center   py-8" id="skills">
                 <CardList />
             </div>
         </section>
