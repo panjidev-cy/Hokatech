@@ -1,30 +1,31 @@
 import profile from "../assets/profile.jpeg";
 
-import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variant";
 const Hero = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
-        }
-      });
-    });
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.add("show");
+  //       } else {
+  //         entry.target.classList.remove("show");
+  //       }
+  //     });
+  //   });
 
-    const hiddenElements = document.querySelectorAll(".hide");
-    hiddenElements.forEach((el) => observer.observe(el));
+  //   const hiddenElements = document.querySelectorAll(".hide");
+  //   hiddenElements.forEach((el) => observer.observe(el));
 
-    return () => {
-      hiddenElements.forEach((el) => observer.unobserve(el));
-    };
-  }, []);
+  //   return () => {
+  //     hiddenElements.forEach((el) => observer.unobserve(el));
+  //   };
+  // }, []);
 
   return (
     <>
       <header className=" bg-white w-full h-screen relative flex items-center justify-between md:items-center md:justify-center px-4    md:min-h-screen " id="home">
-        <div className="w-1/2 md:w-full hide">
+        <motion.div className="w-1/2 md:w-full " variants={fadeIn("right")} initial="hidden" whileInView={"show"}>
           <h1 className="text-5xl font-bold font-poppins leading-tight md:w-full md:text-4xl ">
             Code That <span className="px-2 bg-yellow-300">Speaks,</span> <span className=" bg-purple text-white">Design</span>That Inspires
           </h1>
@@ -42,14 +43,14 @@ const Hero = () => {
               </a>
             </button>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="relative border-2 shadow-md shadow-slate-200 rounded-lg overflow-hidden md:hidden">
+        <motion.div className="relative border-2 shadow-md shadow-slate-200 rounded-lg overflow-hidden md:hidden" variants={fadeIn("left")} initial="hidden" whileInView={"show"}>
           <img src={profile} alt="" className="w-[300px]  " />
           <div className="w-full h-12 bg-white absolute bottom-0 bg-opacity-10 backdrop-blur-sm">
             <h3 className="text-center text-lg font-poppins font-semibold py-2">anya grande</h3>
           </div>
-        </div>
+        </motion.div>
       </header>
     </>
   );
