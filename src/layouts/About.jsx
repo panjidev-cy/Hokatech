@@ -4,8 +4,8 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js", "Tailwind CSS",
 const About = () => {
   return (
     <>
-      <section className="w-full min-h-screen flex items-center justify-between  md:mb-12" id="about">
-        <div className="w-1/2 lg:hidden">
+      <section className="w-full min-h-screen flex items-center justify-between  md:mb-12 scr" id="about">
+        <div className="w-1/2 lg:hidden ">
           <div className="overflow-hidden">
             <img src={profile} alt="" className="w-[400px]" />
           </div>

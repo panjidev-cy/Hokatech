@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typewriter Animation</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: monospace;
+        font-size: 1.5rem;
+      }
+
+      span {
+        display: inline-block;
+        width: 0; /* Awalnya lebar 0 */
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        animation: write 4s steps(18) infinite; /* Animasi berjalan terus */
+        border-right: 2px solid black;
+        animation: write 4s steps(18) infinite, border-blink 0.6s step-end infinite;
+      }
+
+      /* span::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        margin-right: -1rem;
+        font-weight: bold;
+        animation: blink 0.6s step-end infinite;
+      } */
+
+      @keyframes border-blink {
+        0%,
+        100% {
+          border-right-color: black; /* Warna awal border */
+        }
+        50% {
+          border-right-color: transparent; /* Hilangkan border di tengah */
+        }
+      }
+
+      @keyframes write {
+        0% {
+          width: 0; /* Awal teks kosong */
+        }
+        50% {
+          width: 18ch; /* Teks penuh muncul */
+        }
+        100% {
+          width: 0; /* Teks hilang lagi */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span>type write animation</span>
+    </div>
+  </body>
+</html>
