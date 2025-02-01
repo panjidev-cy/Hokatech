@@ -1,20 +1,15 @@
-import Navigation from "./layouts/Naviagtion";
-import Hero from "./layouts/Hero";
-import About from "./layouts/About";
-import Quotes from "./layouts/Quotes";
-import Skill from "./layouts/Skill";
-import Footer from "./layouts/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navigation from "./layouts/Navigation";
+import Landing from "./pages/Landing";
 function App() {
   return (
     <>
-      <Navigation />
-      <main className="px-20 md:px-10 mt-8">
-        <Hero />
-        <About />
-        <Quotes />
-      </main>
-      <Skill />
-      <Footer />
+      <Router>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+      </Router>
     </>
   );
 }

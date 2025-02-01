@@ -3,25 +3,6 @@ import profile from "../assets/profile.jpeg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
 const Hero = () => {
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("show");
-  //       } else {
-  //         entry.target.classList.remove("show");
-  //       }
-  //     });
-  //   });
-
-  //   const hiddenElements = document.querySelectorAll(".hide");
-  //   hiddenElements.forEach((el) => observer.observe(el));
-
-  //   return () => {
-  //     hiddenElements.forEach((el) => observer.unobserve(el));
-  //   };
-  // }, []);
-
   return (
     <>
       <header className=" bg-white w-full h-screen relative flex items-center justify-between md:items-center md:justify-center px-4    md:min-h-screen " id="home">
