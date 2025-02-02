@@ -7,7 +7,13 @@ import img3 from "../assets/computer.jpg";
 
 const Card = ({ title, description, imageSrc }) => {
   return (
-    <motion.div variants={fadeIn("left")} initial="hidden" whileInView={"show"} className="flex flex-col items-center overflow-hidden  rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-white ">
+    <motion.div
+      variants={fadeIn("left")}
+      initial="hidden"
+      whileInView={"show"}
+      whileHover={{ scale: 1.05 }}
+      className="flex flex-col items-center overflow-hidden  rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-white hover:scale-[3]"
+    >
       <img src={imageSrc} alt={title} className="w-full h-32 object-cover " />
       <div className=" py-4   px-4 relative">
         <h3 className="text-lg font-semibold text-gray-800">{title}</h3>

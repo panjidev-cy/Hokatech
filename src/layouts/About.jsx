@@ -1,4 +1,4 @@
-import SkillsList from "../components/SkillsList";
+// import SkillsList from "../components/SkillsList";
 import profile from "../assets/profile.jpeg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variant";
@@ -22,10 +22,10 @@ const About = () => {
             <span className="bg-dark text-yellow-300 px-2 inline-block rotate-6">developer</span>
           </h1>
           <p className="text-base font-poppins mt-10 w-[90%] border-l-2 pl-4">I am Panji Bhekti, ready to help you build stunning, high-performance apps. Discover my work and be a part of this story.</p>
-          <div className="pt-4">
+          {/* <div className="pt-4">
             <h1 className="text-2xl font-bold mb-4 font-poppins bg-dark text-yellow-300 inline-block px-2 py-1 rounded-md">Skills</h1>
             <SkillsList skills={skills} />
-          </div>
+          </div> */}
         </motion.div>
       </section>
     </>
